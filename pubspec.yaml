@@ -38,6 +38,8 @@ dependencies:
   swipeable_button_view: ^0.0.2
   page_transition: ^2.0.5
   flutter_3d_choice_chip: ^0.1.4
+  pretty_gauge: ^1.0.1
+  share_plus: ^6.3.1
 
 dev_dependencies:
   flutter_test:
