@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'SigIn SignUp Page Demo',
+      title: 'BMI Calculator',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
