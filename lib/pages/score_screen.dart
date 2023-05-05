@@ -4,6 +4,7 @@ import 'package:pretty_gauge/pretty_gauge.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../main.dart';
+import 'home.dart';
 
 class ScoreScreen extends StatefulWidget {
   final double bmiScore;
