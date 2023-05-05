@@ -44,7 +44,7 @@ class GenderWidgetState extends State<GenderWidget> {
               child: Column(
                 children: [
                   Image.asset(
-                    "assets/bmi/man.png",
+                    "assets/images/man.png",
                     width: 50,
                   ),
                   const SizedBox(
@@ -70,7 +70,7 @@ class GenderWidgetState extends State<GenderWidget> {
               child: Column(
                 children: [
                   Image.asset(
-                    "assets/bmi/woman.png",
+                    "assets/images/woman.png",
                     width: 50,
                   ),
                   const SizedBox(
