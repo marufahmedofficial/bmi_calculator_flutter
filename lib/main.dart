@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:swipeable_button_view/swipeable_button_view.dart';
 
+import 'pages/age_weight_widget.dart';
+import 'pages/gender_widget.dart';
+import 'pages/height_widget.dart';
+import 'pages/score_screen.dart';
+
 
 class HomeScreenBMI extends StatefulWidget {
   const HomeScreenBMI({Key? key}) : super(key: key);

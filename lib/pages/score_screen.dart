@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:pretty_gauge/pretty_gauge.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../main.dart';
+
 class ScoreScreen extends StatefulWidget {
   final double bmiScore;
 
@@ -113,7 +115,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                       ),
                       onPressed: () {
                         Navigator.push(
-                            context, MaterialPageRoute(builder: (context) => const HomePage()));
+                            context, MaterialPageRoute(builder: (context) => const HomeScreenBMI()));
                       },
                     ),
                   ]))),
