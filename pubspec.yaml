@@ -42,6 +42,13 @@ dependencies:
   share_plus: ^6.3.1
 
 dev_dependencies:
+  flutter_launcher_icons: "^0.13.0"
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/bmi.png"
+  min_sdk_android: 21
   flutter_test:
     sdk: flutter
 
