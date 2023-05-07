@@ -31,7 +31,7 @@ class GenderWidgetState extends State<GenderWidget> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ChoiceChip3D(
-              border: Border.all(color: Colors.grey),
+              border: Border.all(color: Colors.green),
               style: _gender == 1 ? selectedStyle : unselectedStyle,
               onSelected: () {
                 setState(() {
@@ -57,7 +57,7 @@ class GenderWidgetState extends State<GenderWidget> {
             width: 20,
           ),
           ChoiceChip3D(
-              border: Border.all(color: Colors.grey),
+              border: Border.all(color: Colors.green),
               style: _gender == 2 ? selectedStyle : unselectedStyle,
               onSelected: () {
                 setState(() {
