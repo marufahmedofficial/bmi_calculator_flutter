@@ -53,10 +53,10 @@ class _ScoreScreenState extends State<ScoreScreen> {
                       minValue: 0,
                       maxValue: 40,
                       segments: [
-                        GaugeSegment('UnderWeight', 18.5, Colors.red),
+                        GaugeSegment('UnderWeight', 18.5, Colors.yellow),
                         GaugeSegment('Normal', 6.4, Colors.green),
-                        GaugeSegment('OverWeight', 5, Colors.orange),
-                        GaugeSegment('Obese', 10.1, Colors.pink),
+                        GaugeSegment('OverWeight', 5, Colors.orange.shade400),
+                        GaugeSegment('Obese', 10.1, Colors.red.shade900),
                       ],
                       valueWidget: Text(
                         widget.bmiScore.toStringAsFixed(1),
@@ -89,6 +89,9 @@ class _ScoreScreenState extends State<ScoreScreen> {
                             onPressed: () {
                               Navigator.pop(context);
                             },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.deepPurple, // Background color
+                            ),
                             child: const Text("Re-calculate")),
                         const SizedBox(
                           width: 10,
@@ -98,6 +101,9 @@ class _ScoreScreenState extends State<ScoreScreen> {
                               Share.share(
                                   "Your BMI is ${widget.bmiScore.toStringAsFixed(1)} at age ${widget.age}");
                             },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.green, // Background color
+                            ),
                             child: const Text("Share")),
                       ],
                     ),
@@ -109,7 +115,7 @@ class _ScoreScreenState extends State<ScoreScreen> {
                         'Home',
                         style: TextStyle(fontSize: 13),
                       ),
-                      // backgroundColor: Colors.black,
+                      backgroundColor: Colors.pink.shade500,
                       icon: const Icon(
                         CupertinoIcons.home,
                         size: 15.0,
