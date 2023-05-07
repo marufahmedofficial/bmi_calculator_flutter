@@ -32,8 +32,9 @@ class HomeScreenBMIState extends State<HomeScreenBMI> {
           title: const Text("BMI Calculator"),
         ),
         body: SingleChildScrollView(
+          // physics: BouncingScrollPhysics(parent: AlwaysScrollableScrollPhysics()),
           child: Container(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.only(left: 12,right: 12,top: 25,bottom: 2),
             child: Card(
               elevation: 12,
               shape: const RoundedRectangleBorder(),
@@ -114,7 +115,7 @@ class HomeScreenBMIState extends State<HomeScreenBMI> {
                               activeColor: Colors.blue,
                               buttonWidget: const Icon(
                                 Icons.arrow_forward_ios_rounded,
-                                color: Colors.black,
+                                color: Colors.blue,
                               ),
                               buttonText: "CALCULATE"),
                         ),
